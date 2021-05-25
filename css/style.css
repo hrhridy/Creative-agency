@@ -1,0 +1,1013 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap');
+
+/* =========== BASIC CSS ============== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6{
+    font-family: 'Open Sans', sans-serif;
+ 
+
+ }
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;       
+    scroll-behavior: smooth;
+}
+
+/* ======================== COMMON CSS STYLE ===================== */
+.same_btn {
+    border-radius: 1rem;
+    height: 4.5rem !important;
+    width: 15rem;
+    height: 5rem;
+    color: #fff;
+    border: none;
+    border-bottom: .4rem solid #FF5990;
+    background: #F42267;
+    border-radius: .6rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.5) 1.95px 1.95px 2.6px;
+    transition: all ease .4s;
+}
+.same_btn:hover{
+    background: #a8023a;
+    border-bottom: .4rem solid #fa3f7d;
+
+}
+
+/* ================================ HEADER STICKY MENU STYLE START ====================== */
+.sticky{
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+    background: rgba(244, 34, 104, 0.9) !important;
+    transition: all ease-in-out .3s;
+}
+.sticky li a:hover{
+    color: #1B1464 !important;
+}
+/* ================================ HEADER STICKY MENU STYLE END ======================= */
+
+
+/* ================================== HEADER AREA START =============================== */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0rem;
+    background: transparent;
+    position: fixed;
+    width: 100vw;
+}
+
+#header .logo {
+    margin-left: 5rem;
+    cursor: pointer;
+}
+
+#header .logo img {
+    width: 20rem;
+    height: 5rem;
+}
+
+.nav-area .nav-item {
+    margin-right: 3rem;
+    display: block;
+}
+
+.nav-area .nav-item li {
+    display:inline-block;
+    padding: 0rem 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.nav-area .nav-item li a {
+    padding: 1.5rem 0rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: .3rem solid transparent;
+    transition: all ease .2s;
+
+}
+.nav-area .nav-item li a:hover{
+    border-bottom: .3rem solid #ffffff;
+}
+
+
+/* ================================== HEADER AREA END ======================== */
+
+/* ================================== HERO AREA START ======================== */
+
+#hero_area {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/Header bg Image.png');
+    background-size: 100% 100%;
+    
+}
+.hero_col_wrapper{
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    margin: 0 auto;
+}
+#hero_area .hero_col_left {
+    width: 60%;
+    margin: auto 0;
+}
+
+.hero_col_left h4 {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 300;
+    color: #fff;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero_col_left h2 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.hero_col_left p {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.hero_col_left .btn_wrap {
+    margin-left: 5rem;
+}
+
+.hero_col_left .btn {
+    width: 15rem;
+    height: 4rem;
+    color: #fff;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    margin-right: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.hero_col_left .btn_one {
+    background-color: #F42267;
+    transition: all ease .2s;
+}
+
+.hero_col_left .btn_one:hover {
+    background-color: #cf0c4d;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+.hero_col_left .btn_two {
+    background-color: #68328E;
+    transition: all ease .3s;
+}
+.hero_col_left .btn_two:hover {
+    background-color: #55207a;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+.hero_col_right {
+    width: 40%;
+}
+
+.hero_front_img {
+    width: auto;
+    height: 50rem;
+    float: right;
+
+}
+
+/* ================================== HERO AREA END ========================== */
+
+/* ================================== ABOUT AREA START ========================== */
+#about_area {
+    width: 100vw;
+    height: auto;
+    background-image: url(Images/World\ Map.png);
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+
+.about {
+    /* margin: 0rem 10rem; */
+    width: 80vw;
+    margin: 0 auto;
+    padding: 5rem 0rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about .about_col_left h4 {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    color: #6F6F6F;
+    line-height: 2.5rem;
+}
+
+.about .about_col_left {
+    width: 50%;
+}
+
+.about .about_col_left h4 {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    color: #6F6F6F;
+    line-height: 2.5rem;
+}
+
+.about .about_col_left h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 4.4rem;
+    color: #484848;
+}
+
+.about_col_left ul li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    margin: 1.5rem 0rem;
+    font-weight: 600;
+    color: #5D5D5D;
+}
+
+.about_col_left ul li:first-child {
+    padding-left: 0;
+}
+
+.about_col_left ul li:last-child {
+    width: 15rem;
+    height: 4rem;
+    color: #fff;
+    border: none;
+    background: #F42267;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+}
+
+.about_col_left p {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    color: #5D5D5D;
+    margin-bottom: 3rem;
+
+}
+
+.about_col_left .btn {
+    border-radius: .6rem;
+    height: 5rem;
+    border-bottom: .5rem solid #FF5990;
+}
+
+.about .about_col_right {
+    width: 50%;
+}
+
+.about_col_right img {
+    width: auto;
+    height: 40rem;
+    float: right;
+}
+
+/* ================================== ABOUT AREA END ========================== */
+
+/* ================================== OUR ACHIVEMENT AREA START ========================== */
+.achievement {
+    width: 100vw;
+    height: 35rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    background: #4B2D7F;
+
+}
+
+.achievement img {
+    width: 5rem;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.achievement h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-bottom: .5rem;
+}
+
+.achievement h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.achievement h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.achievement p {
+    color: #e4e4e4;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+}
+
+.achievement_col_one,
+.achievement_col_two,
+.achievement_col_three {
+    padding: 3rem;
+}
+
+.achievement_col_two {
+    background: #40286A;
+}
+
+/* ================================== OUR ACHIVEMENT AREA END ========================== */
+
+/* ================================== OUR STORY AREA START ========================== */
+.story {
+    background-image: url("Images/story\ bg.png");
+    background-position: 100% 100%;
+    width: 100vw;
+    height: 42rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story_content {
+    text-align: center;
+}
+
+.story_content h4 {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 1rem;
+    letter-spacing: .2rem;
+}
+
+.story_content h2 {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.story_content p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+/* ================================== OUR STORY AREA END ========================== */
+
+/* ================================== OUR SERVICE AREA START ========================== */
+.services {
+    width: 80vw;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.services_col_left {
+    grid-column: 1 / 3;
+    padding-right: 5rem;
+}
+
+.services .left_services_col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.services_col_left h4 {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 300;
+    color: #6F6F6F;
+    line-height: 2.5rem;
+}
+
+.services_col_left h2 {
+    color: #484848;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.services_col_left img {
+    width: auto;
+    height: 6rem;
+}
+
+.services_col_left h3 {
+    color: #666464;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.services_col_left p {
+    color: #484848;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.services_col_left .services_btn {
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+}
+
+.services_col_right {
+    margin: auto 0;
+    grid-column: 3 / -1;
+}
+
+.services_col_right iframe {
+    width: 40rem;
+    height: 30rem;
+    border-radius: .5rem;
+    border: none;
+}
+
+/* ================================== OUR SERVICE AREA END ========================== */
+
+/* ================================== OUR RECENT WORK AREA START ======================== */
+#recent_work {
+    width: 100vw;
+    height: auto;
+    background: #f1f1f1;
+}
+
+.recent_work {
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5rem 0rem;
+}
+
+.recent_work h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.recent_work p {
+    color: #484848;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+}
+
+.recent_work li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 1rem;
+    margin: 1.5rem 0rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+.recent_work_content button {
+    margin: 2.5rem 0;
+    color: #5D5D5D;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    transition: all ease .5s;
+    border: none;
+    height: 4rem;
+    width: 13rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.recent_work_content .btn_design {
+    background: #F42267;
+    color: #fff;
+    box-shadow: rgba(61, 61, 61, 0.5) 1.95px 1.95px 2.6px;
+}
+
+.recent_work .recent_work_img img {
+    width: 29rem;
+    height: 29rem;
+    margin-bottom: 2rem;
+}
+
+.recent_work .recent_work_img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.recent_work_btn {
+    margin-top: 3rem;
+}
+
+/* ================================== OUR RECENT WORK AREA END ========================== */
+
+/* ================================= OUR CLIENT LOGO AREA START ========================= */
+
+#client_logo {
+    width: 100vw;
+    height: 30rem;
+    background: #4b2d7f;
+    margin: auto 0;
+    text-align: center;
+}
+
+.all_logo {
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 6rem 0;
+    grid-gap: 1rem;
+}
+
+.all_logo img {
+    text-align: center;
+    width: 8.5rem;
+    height: auto;
+    margin-bottom: 4rem;
+}
+
+.all_logo img:nth-child(3) {
+    width: 5.5rem !important;
+}
+
+/* ================================== OUR CLIENT LOGO AREA END ========================== */
+
+/* ================================== TESTIMONIALS AREA START ========================== */
+#client_testimonials {
+    width: 100vw;
+    height: auto;
+    padding-top: 5rem;
+    background: #413737;
+    color: #fff;
+    margin: 0 auto !important;
+}
+
+.testimonials {
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.testimonials_content {
+    width: 60%;
+}
+
+.testimonials_content h4 {
+    font-size: 2.3rem;
+    font-style: italic;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.testimonials_content h2 {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.testimonials_content p {
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 5rem;
+    margin-left: 4rem;
+    position: relative;
+}
+
+.testimonials_content p::before {
+    content: "\0201C";
+    font-size: 12rem;
+    color: #f42267;
+    font-style: italic;
+    position: absolute;
+    top: 30%;
+    left: -13%;
+}
+
+.testimonials_content .icon_wrap {
+    margin-left: 4rem;
+}
+
+.testimonials_content i {
+    font-size: 1.3rem;
+    color: #f42267;
+    margin-bottom: 1rem;
+    margin-right: .4rem;
+}
+
+.testimonials_content .icon_wrap h4 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.testimonials_client_photo {
+    width: 40%;
+}
+
+.testimonials_client_photo img {
+    width: auto;
+    height: 40rem;
+}
+
+/* ================================== TESTIMONIALS AREA END ========================== */
+
+/* ================================== CONTACT US AREA START ========================== */
+#contact_us {
+    width: 100vw;
+    height: auto;
+    background-image: url("images/form_img.png");
+    background-size: cover;
+    object-fit: cover;
+    background-position: center center;
+    padding: 5rem 0;
+}
+
+.contact {
+    width: 80vw;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 4.5rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 5rem;
+}
+
+.contact h4 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    line-height: 5rem;
+}
+
+.contact p {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact input[type="text"],
+.contact input[type="email"] {
+    width: 40%;
+    border: none;
+    padding: 1.2rem 2.5rem;
+    border-radius: .4rem;
+    background-color: rgba(255, 255, 255, 0.39);
+    margin-right: 1.5rem;
+    color: #fff;
+    outline: none;
+
+}
+
+.contact input::placeholder {
+    color: #fff;
+}
+
+.contact input[type="submit"] {
+    width: 13%;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    background-color: #4b2d7f;
+    padding: 1.2rem;
+    border-radius: .8rem;
+    border-bottom: .4rem solid #a57ee9;
+    transition: all ease .2s;
+}
+.contact input[type="submit"]:hover {
+    background-color: #402372;
+    border-bottom: .4rem solid #8763c5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* ================================== CONTACT US AREA END ========================== */
+
+/* ================================ SOCIAL MEDIA LINK AREA START ========================= */
+#social_media_link {
+    width: 100vw;
+    height: auto;
+    background: #4b2d7f;
+    padding: 5rem 0;
+}
+
+.social_media {
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social_media ul li {
+    display: inline-block;
+    list-style: none;
+    border-right: .2rem solid #7647c7;
+    padding: .5rem 2.5rem;
+}
+
+.social_media ul li a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.social_media ul li:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+/* ================================= SOCIAL MEDIA LINK AREA END ========================= */
+
+/* ================================= QUICK LINK AREA START ============================== */
+#quick_links {
+    width: 100vw;
+    height: auto;
+    background-image: url(Images/World\ Map.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    object-fit: cover;
+}
+
+.links {
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    padding: 5rem 0rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% 25% auto auto;
+}
+
+.link_col_one h2,
+.link_col_two h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #4b2d7f;
+}
+
+.link_col_one ul,
+.link_col_two ul {
+    margin-bottom: 5rem;
+}
+
+.link_col_one ul li,
+.link_col_two ul li {
+    list-style: none;
+}
+
+.link_col_one li a,
+.link_col_two li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #171717;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+
+.link_img_col_one img,
+.link_img_col_two img{
+    margin: .5rem;
+    width: 22rem;
+    height: auto;
+
+}
+/* ================================== QUICK LINK AREA END ============================ */
+
+/* ================================== FOOTER AREA START ============================= */
+#footer {
+    width: 100vw;
+    height: auto;
+    padding: 3rem 0rem;
+    background: #f6f6f6;
+}
+
+.footer_content {
+    width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_content h4 {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    font-weight: 700;
+}
+
+.footer_content ul li {
+    display: inline-block;
+    list-style-type: square;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin: 0rem 1rem;
+    font-weight: 600;
+}
+
+.footer_content ul li a {
+    text-decoration: none;
+    color: #666464;
+    transition: all ease .9s;
+}
+
+.footer_content ul li a:hover {
+    text-decoration: underline;
+}
+/* ================================== FOOTER AREA END ========================== */
+
+/* ===================================================================================== */
+                                 /* RESPONSIVE CSS CODE START*/
+/* ====================================================================================== */
+
+/* ================== MEDIUM DEVICES MIN-WIDTH 768 PX & MAX WIDTH 992 PX ================= */
+@media screen and (min-width:768px) and (max-width:992px){
+    html{
+        font-size: 57%;
+    }
+    
+    /* ================ HEADER AREA RESPONSIVE CSS ================*/
+    #header .logo img {
+        width: 18rem;
+    }
+    #header .logo {
+        margin-left: 4rem;
+    }
+    .nav-area .nav-item {
+        margin-right: 0rem;
+    }
+
+    .nav-area .nav-item li {
+        font-size: 1.5rem;
+    } 
+
+    /* ================= HERO AREA RESPONSIVE CSS =================*/
+    #hero_area {
+        height: 75vh;
+    }
+    .hero_col_wrapper{
+        height: 100%;
+    }
+    
+    /* ================= ABOUT AREA RESPONSIVE CSS =================*/
+    #about_area {
+        width: 100vw;
+        height: auto;
+        background-image: url(Images/World\ Map.png);
+        background-size: 100% 100%;
+        object-fit: cover;
+    }
+    
+    .about {
+        width: 80vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .about .about_col_left{
+        width: 60%;
+    }
+    .about .about_col_left h4 {
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: 400;
+        color: #6F6F6F;
+        line-height: 2.5rem;
+    }
+
+    .about .about_col_left h2 {
+        font-size: 3rem;
+    }
+    
+    .about_col_left ul li:last-child {
+        font-size: 1.3rem;
+        padding: 1.2rem;
+    }
+    .about .about_col_right{
+        width: 40%;
+    }
+    .about_col_right img {
+        width: auto;
+        height: 35rem;
+        float: right;
+    }
+
+    /* ================= OUR STORY RESPONSIVE CSS =================*/
+
+    .story {
+        height: 37rem;
+    }
+
+    /* ================= OUR SERVICES RESPONSIVE CSS =================*/
+
+    .services {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 5rem 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .services_col_left {
+        padding-right: 0;
+    }
+    
+    .services_col_left img {
+        height: 5rem;
+    }
+
+    .services_col_right iframe {
+        width: 35rem;
+    }
+    
+    /* ================= OUR RECENT RESPONSIVE CSS =================*/
+    .recent_work .recent_work_img img {
+        width: 22rem;
+        height: 22rem;
+    }
+
+    /* ================= OUR TESTIMONIALS RESPONSIVE CSS =================*/
+    .testimonials_content p::before {
+        top: 25%;
+        left: -15%;
+    }
+
+    /* ================= OUR SOCILA MEDIA RESPONSIVE CSS =================*/
+    .social_media {
+        width: 85vw;
+    }
+    /* ================= OUR SOCILA MEDIA RESPONSIVE CSS =================*/
+
+    .link_img_col_one img,
+    .link_img_col_two img{
+        width: 18rem;
+    }
+
+}
